@@ -7,13 +7,15 @@ import { WhoComponent } from './who/who.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WhoComponent,
     HomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
