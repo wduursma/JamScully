@@ -13,7 +13,9 @@ export class DataService {
   getUsers() {
     return this.http.get('https://reqres.in/api/users')
   }
-  
+  getPort() {
+    return this.http.get('http://i-nix.nl/wp-json/wp/v2/posts/')
+  }
   firstClick() {
     return console.log('clicked');
   }

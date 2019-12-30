@@ -3,11 +3,12 @@
 
 <button (click)="firstClick()">Click me</button>
 
-<h1>Users</h1>
+<h1>PortFolio</h1>
 
-<ul *ngIf="users">
-  <li *ngFor="let user of users.data">
-    <img [src]="user.avatar">
-    <p>{{ user.first_name }} {{ user.last_name }}</p>
-  </li>
-</ul>
+<ul *ngIf="portFolio">
+    <li *ngFor="let port of portFolio">
+    
+      <p>{{ port.id }} | {{ port.title.rendered}} </p>
+    </li>
+  </ul>
+
