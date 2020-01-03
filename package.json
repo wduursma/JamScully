@@ -24,6 +24,9 @@
     "@scullyio/init": "0.0.9",
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper": "^1.0.1",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

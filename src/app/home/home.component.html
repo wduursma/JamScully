@@ -1,15 +1,14 @@
-<p>home works!</p>
 
-
-<button (click)="firstClick()">Click me</button>
-
-<h1>PortFolio</h1>
-
-<ul *ngIf="portFolio">
-    <li *ngFor="let port of portFolio">
-        <img [src]="port.acf.image">
-    
-      <p>{{ port.acf.release }} | {{ port.acf.ontwerp }}  {{ port.title.rendered}} </p>
-    </li>
-  </ul>
-
+<div class="container">
+  <div class="row">
+    <ul *ngIf="portFolio">
+        <li *ngFor="let port of portFolio">
+            <div class="col-sm">
+            <img [src]="port.acf.image">
+        
+              <p>{{ port.acf.release }} | {{ port.acf.ontwerp }}  {{ port.title.rendered}} </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+</div>
