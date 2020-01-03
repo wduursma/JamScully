@@ -14,7 +14,7 @@ export class DataService {
     return this.http.get('https://reqres.in/api/users')
   }
   getPort() {
-    return this.http.get('https://i-nix.nl/wp-json/wp/v2/posts/')
+    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts/')
   }
   firstClick() {
     return console.log('clicked');
