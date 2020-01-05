@@ -30,8 +30,8 @@ export class HomeComponent implements OnInit {
     this.data.getPort().subscribe(data => {
       this.portFolio = data;
       console.log(this.portFolio);
-    }
-  );
+      }
+    );
   }
 
   firstClick() {

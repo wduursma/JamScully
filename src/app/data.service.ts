@@ -16,6 +16,9 @@ export class DataService {
   getPort() {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts/')
   }
+  getPortUser() {
+    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/pages/44')
+  }
   firstClick() {
     return console.log('clicked');
   }

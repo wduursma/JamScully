@@ -1,1 +1,8 @@
-<p>who works!</p>
+<div class="col-lg-6" *ngIf="users">
+    <div id="b_one" class="content home-info first b_one" >
+        <h1>{{ users.title.rendered }}</h1>
+        <p>
+            {{ users.content.rendered }}
+        </p>
+    </div>
+</div>
