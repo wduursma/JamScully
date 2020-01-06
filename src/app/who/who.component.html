@@ -1,8 +1,17 @@
-<div class="col-lg-6" *ngIf="users">
+<div class="col-lg-6 float-l" *ngIf="users">
     <div id="b_one" class="content home-info first b_one" >
         <h1>{{ users.title.rendered }}</h1>
         <p>
             {{ users.content.rendered }}
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 float-l" *ngIf="users">
+    <div id="b_one" class="content home-info first b_one" >
+        <h1>{{ users.acf.naam }}</h1>
+        <p>
+            <span class="lnr lnr-chevron-right"></span>
         </p>
     </div>
 </div>

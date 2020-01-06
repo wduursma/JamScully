@@ -26,6 +26,7 @@
     "@scullyio/scully": "latest",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
+    "linearicons": "^1.0.2",
     "popper": "^1.0.1",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
