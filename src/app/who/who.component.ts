@@ -9,6 +9,7 @@ import { DataService } from '../data.service';
 export class WhoComponent implements OnInit {
 
   users: any;
+  status: boolean = false;
 
   constructor(
     private data: DataService
@@ -21,11 +22,13 @@ export class WhoComponent implements OnInit {
   getusert() {
     this.data.getPortUser().subscribe(data => {
       this.users = data;
-      console.log(this.users.title);
-      console.log(this.users.title.rendered);
       }
     );
   }
+  clickEvent(){
+      this.status = !this.status;       
+  }
+
   
 
 
