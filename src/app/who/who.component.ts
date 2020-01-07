@@ -9,7 +9,7 @@ import { DataService } from '../data.service';
 export class WhoComponent implements OnInit {
 
   users: any;
-  status: boolean = false;
+  status: boolean = true;
 
   constructor(
     private data: DataService

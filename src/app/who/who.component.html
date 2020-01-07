@@ -9,28 +9,25 @@
 
 <div class="col-lg-4 float-l" *ngIf="users">
         <div id="b_two-xXX" class="content personal"></div>
-        test
-       
-        <div class="personal-info" (click)="clickEvent()"  
-                                   [ngClass]="status ? 'success' : 'danger'">
+        <div [ngClass]="status ? 'personal-info' : 'personal-extract'">
 
             <h1>{{ users.acf.naam }}</h1>
-            <span class="lnr lnr-chevron-right"></span>
-                    <div class="person legenda">Naam:</div><div class="person info">Wietze Duursma</div>
+            <span class="lnr " (click)="clickEvent()" [ngClass]="status ? 'lnr-chevron-up' : 'lnr-chevron-down'"></span>
+                <div class="personalSpace">
+                    <div class="person legenda">Naam:</div><div class="person info">{{ users.acf.naam }}</div>
+                    <div class="person legenda">Woonregio:</div><div class="person info">{{ users.acf.woonplaats }}</div>
+                    <div class="person legenda">Geboortejaar:</div><div class="person info">{{ users.acf.geboortejaar }}</div>
                 
-                    <div class="person legenda">Woonregio:</div><div class="person info">Zoetermeer</div>
+                    <div class="person legenda">Nationaliteit:</div><div class="person info">{{ users.acf.nationaliteit }}</div>
                 
-                    <div class="person legenda">Geboortejaar:</div><div class="person info">1970</div>
-                
-                    <div class="person legenda">Nationaliteit:</div><div class="person info">Nederlands</div>
-                
-                    <div class="person legenda">Rijbewijs:</div><div class="person info">B</div>
+                    <div class="person legenda">Rijbewijs:</div><div class="person info">{{ users.acf.nationaliteit }}</div>
                 
                     <div class="person legenda"></div><div class="person info"></div>
                 
-                    <div class="person legenda">Email:</div><div class="person info">w.duursma@sharevalue.nl</div>
+                    <div class="person legenda">Email:</div><div class="person info">{{ users.acf.emailx }}</div>
                 
-                    <div class="person legenda">Telefoon:</div><div class="person info">06 55 230 149</div>
+                    <div class="person legenda">Telefoon:</div><div class="person info">{{ users.acf.telefoon }}</div>
+                 </div>
         </div>
     
 </div>
