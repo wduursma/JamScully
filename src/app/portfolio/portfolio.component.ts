@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,11 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  users: any;
+  message: any;
+  title: any;
 
-  message = "hello world"
+  constructor(
+    private data: DataService
+  ) { }
+
+
 
   ngOnInit() {
+    this.getusert();
   }
-
+  
+  getusert() {
+    this.data.getPortUser().subscribe(data => {
+      this.users = data;
+      this.message = this.users.content.rendered;
+      this.title = this.users.title.rendered;
+      }
+    );
+  }
+ 
 }

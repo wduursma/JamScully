@@ -12,26 +12,14 @@ export class WhoComponent implements OnInit {
   status: boolean = true;
 
   @Input() message: string; 
+  @Input() title: string; 
 
   constructor(
     private data: DataService
   ) { }
 
   ngOnInit() {
-    this.getusert();
+   
   }
-
-  getusert() {
-    this.data.getPortUser().subscribe(data => {
-      this.users = data;
-      }
-    );
-  }
-  clickEvent(){
-      this.status = !this.status;       
-  }
-
-  
-
 
 }
