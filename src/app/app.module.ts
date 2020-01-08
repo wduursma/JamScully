@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NavComponent } from './nav/nav.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { NawComponent } from './naw/naw.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { NavComponent } from './nav/nav.component';
     WhoComponent,
     HomeComponent,
     PortfolioComponent,
-    NavComponent
+    NavComponent,
+    CategoriesComponent,
+    NawComponent
   ],
   imports: [
     BrowserModule,
