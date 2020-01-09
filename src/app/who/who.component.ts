@@ -10,6 +10,7 @@ export class WhoComponent implements OnInit {
 
   users: any;
   status: boolean = true;
+  messagex: string;
 
   @Input() message: any; 
  
@@ -19,7 +20,11 @@ export class WhoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.data.currentMessage.subscribe(messagex => this.messagex = messagex)
    
+  }
+  newMessage() {
+    this.data.changeMessage("Hello from who")
   }
 
 }

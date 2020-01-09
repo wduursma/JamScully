@@ -12,6 +12,7 @@ export class PortfolioComponent implements OnInit {
   message: any;
   acf: any;
   categories: any;
+  messagex:string;
 
   constructor(
     private data: DataService
@@ -21,6 +22,7 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
     this.getusert();
+    this.data.currentMessage.subscribe(messagex => this.messagex = messagex)
   }
   
   getusert() {
@@ -29,7 +31,6 @@ export class PortfolioComponent implements OnInit {
       this.message = this.users;
       this.acf = this.users.acf;
       this.categories = this.users.acf.categories;
-      console.log(this.categories);
       }
     );
   }

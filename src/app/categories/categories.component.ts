@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-categories',
@@ -7,12 +8,20 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
-  @Input() acf: any; 
+  messagex: string;
+ 
   @Input() categories: any; 
 
-  constructor() { }
+  constructor(
+    private data: DataService
+  ) { }
 
   ngOnInit() {
+    this.data.currentMessage.subscribe(messagex => this.messagex = messagex)
   }
+  newMessagex() {
+    this.data.changeMessage("Hello from categorie")
+  }
+
 
 }
