@@ -1,7 +1,7 @@
 <div id="b_two" class="content"  *ngIf="categories">
         <li *ngFor="let cat of categories" >
-                {{ cat.label }}
+                <div (click)="newMessagex(cat.label)"> {{ cat.label }} </div>
         </li>
 </div>
 
-<button (click)="newMessagex()">New Message cat</button>
+<button (click)="newMessagex(0)">New Message cat</button>

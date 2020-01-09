@@ -19,8 +19,8 @@ export class CategoriesComponent implements OnInit {
   ngOnInit() {
     this.data.currentMessage.subscribe(messagex => this.messagex = messagex)
   }
-  newMessagex() {
-    this.data.changeMessage("Hello from categorie")
+  newMessagex(value) {
+    this.data.changeMessage(value);
   }
 
 
