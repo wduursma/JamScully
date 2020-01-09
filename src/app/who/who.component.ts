@@ -11,8 +11,8 @@ export class WhoComponent implements OnInit {
   users: any;
   status: boolean = true;
 
-  @Input() message: string; 
-  @Input() title: string; 
+  @Input() message: any; 
+ 
 
   constructor(
     private data: DataService

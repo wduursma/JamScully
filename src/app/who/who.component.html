@@ -1,7 +1,7 @@
 <div id="b_one" class="content home-info first b_one"  *ngIf="message">
-    <h1>{{ title }}</h1>
+    <h1>{{ message.title.rendered }}</h1>
     <p>
-       {{ message }}
+       {{ message.content.rendered }}
     </p>
 </div>
 

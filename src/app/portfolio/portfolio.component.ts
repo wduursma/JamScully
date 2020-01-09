@@ -10,7 +10,8 @@ export class PortfolioComponent implements OnInit {
 
   users: any;
   message: any;
-  title: any;
+  acf: any;
+  categories: any;
 
   constructor(
     private data: DataService
@@ -25,8 +26,10 @@ export class PortfolioComponent implements OnInit {
   getusert() {
     this.data.getPortUser().subscribe(data => {
       this.users = data;
-      this.message = this.users.content.rendered;
-      this.title = this.users.title.rendered;
+      this.message = this.users;
+      this.acf = this.users.acf;
+      this.categories = this.users.acf.categories;
+      console.log(this.categories);
       }
     );
   }

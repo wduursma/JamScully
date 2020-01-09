@@ -1,21 +1,22 @@
-<div id="b_two-xXX" class="content personal"></div>
-<div [ngClass]="status ? 'personal-info' : 'personal-extract'"  *ngIf="users">
-    <h1>{{ users.acf.naam }}</h1>
+<div id="b_two" class="content personal"></div>
+<div [ngClass]="status ? 'personal-info' : 'personal-extract'"  *ngIf="acf">
+    <h1>{{ acf.naam }}</h1>
     <span class="lnr " (click)="clickEvent()" [ngClass]="status ? 'lnr-chevron-up' : 'lnr-chevron-down'"></span>
         <div class="personalSpace">
-            <div class="person legenda">Naam:</div><div class="person info">{{ users.acf.naam }}</div>
-            <div class="person legenda">Woonregio:</div><div class="person info">{{ users.acf.woonplaats }}</div>
-            <div class="person legenda">Geboortejaar:</div><div class="person info">{{ users.acf.geboortejaar }}</div>
-            <div class="person legenda">Nationaliteit:</div><div class="person info">{{ users.acf.nationaliteit }}</div>
-            <div class="person legenda">Rijbewijs:</div><div class="person info">{{ users.acf.nationaliteit }}</div>
+            <div class="person legenda">Naam:</div><div class="person info">{{ acf.naam }}</div>
+            <div class="person legenda">Woonregio:</div><div class="person info">{{ acf.woonplaats }}</div>
+            <div class="person legenda">Geboortejaar:</div><div class="person info">{{ acf.geboortejaar }}</div>
+            <div class="person legenda">Nationaliteit:</div><div class="person info">{{ acf.nationaliteit }}</div>
+            <div class="person legenda">Rijbewijs:</div><div class="person info">{{ acf.nationaliteit }}</div>
             <div class="person legenda"></div><div class="person info"></div>
-            <div class="person legenda">Email:</div><div class="person info">{{ users.acf.email }}</div>
-            <div class="person legenda">Telefoon:</div><div class="person info">{{ users.acf.telefoon }}</div>
+            <div class="person legenda">Email:</div><div class="person info">{{ acf.email }}</div>
+            <div class="person legenda">Telefoon:</div><div class="person info">{{ acf.telefoon }}</div>
             <div class="person legenda">Telefoon:</div><div class="person info">
-                <li *ngFor="let cat of users.acf.categories">
+                <li *ngFor="let cat of acf.categories">
                     {{ cat.label }}
                 </li>
-                {{ users.acf.categories}}</div>
+                </div>
             </div>
 </div>
+
 

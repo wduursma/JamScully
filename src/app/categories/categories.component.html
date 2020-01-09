@@ -1,6 +1,7 @@
-
 <div class="col-lg-3 float-l" >
-        <div id="b_two-xXX" class="content">
-        <p>categories works!</p>
+        <div id="b_two" class="content"  *ngIf="acf">
+                <li *ngFor="let cat of acf.categories" >
+                        {{ cat.label }}
+                </li>
      </div>
 </div>
