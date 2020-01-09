@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CategoriesComponent implements OnInit {
 
   @Input() acf: any; 
+  @Input() categories: any; 
 
   constructor() { }
 
