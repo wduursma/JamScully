@@ -1,7 +1,12 @@
-<div id="b_two" class="content"  *ngIf="categories">
-        <li *ngFor="let cat of categories" >
-                <div (click)="newMessagex(cat.label)"> {{ cat.label }} </div>
-        </li>
+<div id="b_two" class="content tags"  *ngIf="categories">
+        <span *ngFor="let cat of categories" >
+                <span *ngIf="cat.value !== '0'" >
+                        <span (click)="newMessagex(cat.value)" class="itemTag"> {{ cat.label }} </span>
+                </span>
+                <span *ngIf="cat.value === '0'" >
+                                <span> *{{ cat.label }}* </span>
+                </span>
+        </span>
 </div>
 
 <button (click)="newMessagex(0)">New Message cat</button>
