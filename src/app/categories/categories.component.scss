@@ -2,11 +2,11 @@
 
 .tags {
     font-style: italic;
-    color: $lightgray;
+    color: $darkgray;
     cursor: default;
     .itemTag {
             text-decoration: none;
-            border-bottom: 1px solid $lightgray;
+            border-bottom: 1px solid $darkgray;
             cursor: pointer;
             margin: 0 5px;
         

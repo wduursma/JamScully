@@ -9,6 +9,7 @@ import { DataService } from '../data.service';
 export class CategoriesComponent implements OnInit {
 
   messagex: string;
+  
  
   @Input() categories: any; 
 

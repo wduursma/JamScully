@@ -23,7 +23,7 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     this.getusert();
     this.data.currentMessage.subscribe(messagex => this.messagex = messagex )
-    
+
   }
   
 
