@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   );
   }
   getPort() {
-    this.data.getPort().subscribe(data => {
+    this.data.getPosts().subscribe(data => {
       this.portFolio = data;
       console.log(this.portFolio);
       }

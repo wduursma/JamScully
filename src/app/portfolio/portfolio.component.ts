@@ -22,9 +22,11 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
     this.getusert();
-    this.data.currentMessage.subscribe(messagex => this.messagex = messagex)
+    this.data.currentMessage.subscribe(messagex => this.messagex = messagex )
+    
   }
   
+
   getusert() {
     this.data.getPortUser().subscribe(data => {
       this.users = data;

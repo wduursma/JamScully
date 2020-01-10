@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NavComponent } from './nav/nav.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { NawComponent } from './naw/naw.component';
+import { PostlistComponent } from './postlist/postlist.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NawComponent } from './naw/naw.component';
     PortfolioComponent,
     NavComponent,
     CategoriesComponent,
-    NawComponent
+    NawComponent,
+    PostlistComponent
   ],
   imports: [
     BrowserModule,
