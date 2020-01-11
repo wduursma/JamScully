@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { EventEmitterService } from '../event-emitte.service';
 
 @Component({
   selector: 'app-postlist',
@@ -7,14 +8,41 @@ import { DataService } from '../data.service';
   styleUrls: ['./postlist.component.scss']
 })
 export class PostlistComponent implements OnInit {
-  messagex: string;
+  messagex: string ;
+
+  posts: any;
 
   constructor(
-    private data: DataService
+    private data: DataService,
+    private eventEmitterService: EventEmitterService 
   ) { }
 
   ngOnInit() {
     this.data.currentMessage.subscribe(messagex => this.messagex = messagex)
+    this.getFirstPosts();
+    if (this.eventEmitterService.subsVar==undefined) {    
+      this.eventEmitterService.subsVar = this.eventEmitterService.    
+      invokeFirstComponentFunction.subscribe((value:string) => {    
+        this.getPosts(value); 
+        console.log(value);
+      });    
+    }  
   }
+
+  firstFunction(value) {    
+    alert( value + '\nWelcome to C# Corner \nFunction in post list Component');    
+  } 
+
+  getPosts(value) {
+    this.data.getPosts(value).subscribe(data => {
+      this.posts = data;  
+      }
+    );
+  }
+  getFirstPosts() {
+    
+  }
+   
+
 
 }

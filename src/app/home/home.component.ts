@@ -16,26 +16,10 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getusert();
-    this.getPort();
-  }
-  getusert() {
-    this.data.getUsers().subscribe(data => {
-      this.users = data;
-      console.log(this.users.data);
-    }
-  );
-  }
-  getPort() {
-    this.data.getPosts().subscribe(data => {
-      this.portFolio = data;
-      console.log(this.portFolio);
-      }
-    );
-  }
 
-  firstClick() {
-    this.data.firstClick();
+
   }
+  
+
 
 }

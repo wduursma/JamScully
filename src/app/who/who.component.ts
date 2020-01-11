@@ -23,8 +23,6 @@ export class WhoComponent implements OnInit {
     this.data.currentMessage.subscribe(messagex => this.messagex = messagex)
    
   }
-  newMessage() {
-    this.data.changeMessage("Hello from who")
-  }
+
 
 }
