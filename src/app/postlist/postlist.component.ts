@@ -40,7 +40,10 @@ export class PostlistComponent implements OnInit {
     );
   }
   getFirstPosts() {
-    
+    this.data.getFirstPosts().subscribe(data => {
+      this.posts = data;  
+      }
+    );
   }
    
 

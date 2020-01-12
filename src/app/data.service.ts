@@ -26,7 +26,9 @@ export class DataService {
   getUsers() {
     return this.http.get('https://reqres.in/api/users')
   }
-
+  getFirstPosts() {
+    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts');
+  }
   getPosts(value) {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts?categories='+value);
   }
