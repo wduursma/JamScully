@@ -26,9 +26,8 @@ export class CategoriesComponent implements OnInit {
     this.data.changeMessage(value);
   }
   
-  firstComponentFunction(value){    
+  selectCategories(value){    
     this.eventEmitterService.onFirstComponentButtonClick(value);   
-    console.log(value); 
   } 
 
 

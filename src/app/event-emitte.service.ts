@@ -7,12 +7,16 @@ import { Subscription } from 'rxjs/internal/Subscription';
 export class EventEmitterService {    
     
   invokeFirstComponentFunction = new EventEmitter();    
-  subsVar: Subscription;    
+  invokeSelectContentFunction = new EventEmitter();  
+  subsVar: Subscription;   
+  subsVarContent: Subscription; 
     
   constructor() { }    
     
   onFirstComponentButtonClick(value) {    
     this.invokeFirstComponentFunction.emit(value);   
-    console.log('service: ',value);
-  }    
+  }  
+  onSelectContentClick(cat) {    
+    this.invokeSelectContentFunction.emit(cat);   
+  }      
 }  

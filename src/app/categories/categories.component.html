@@ -1,7 +1,7 @@
 <div id="b_two" class="content tags"  *ngIf="categories">
         <span *ngFor="let cat of categories" >
                 <span *ngIf="cat.value !== '0'" >
-                        <span (click)="firstComponentFunction(cat.value)" class="itemTag"> {{ cat.label }} </span>
+                        <span (click)="selectCategories(cat.value)" class="itemTag"> {{ cat.label }} </span>
                 </span>
                 <span *ngIf="cat.value === '0'" >
                                 <span> *{{ cat.label }}* </span>

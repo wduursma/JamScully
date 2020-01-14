@@ -8,8 +8,8 @@ import { EventEmitterService } from '../event-emitte.service';
   styleUrls: ['./postlist.component.scss']
 })
 export class PostlistComponent implements OnInit {
+  
   messagex: string ;
-
   posts: any;
 
   constructor(
@@ -24,14 +24,13 @@ export class PostlistComponent implements OnInit {
       this.eventEmitterService.subsVar = this.eventEmitterService.    
       invokeFirstComponentFunction.subscribe((value:string) => {    
         this.getPosts(value); 
-        console.log(value);
       });    
     }  
   }
 
-  firstFunction(value) {    
-    alert( value + '\nWelcome to C# Corner \nFunction in post list Component');    
-  } 
+  newContent(value) {
+    this.data.changeMessage(value);
+  }
 
   getPosts(value) {
     this.data.getPosts(value).subscribe(data => {
@@ -44,6 +43,9 @@ export class PostlistComponent implements OnInit {
       this.posts = data;  
       }
     );
+  }
+  selectContent(cat){
+    this.eventEmitterService.onSelectContentClick(cat);   
   }
    
 

@@ -2,10 +2,9 @@
 <div id="b_two" class="content tags"  >
     <section id="myPortfolio">
         <span *ngFor="let post of posts" >
-            <li class="">
+            <li class="" (click)="selectContent(post.id)">
                     <span class="lnr {{post.acf.label_icon}}"></span>
                     {{ post.title.rendered}}
-                    <span class="icon icon-prog-expression"></span>
             </li>
         </span>
     </section>
