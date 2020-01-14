@@ -32,6 +32,9 @@ export class DataService {
   getPosts(value) {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts?categories='+value);
   }
+  getFirstContent() {
+    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts');
+  }
   getContent(value) {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts/'+value);
   }

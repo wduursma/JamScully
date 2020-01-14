@@ -17,13 +17,20 @@ export class ContentComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    
+    this.getFirstContent(); 
     if (this.eventEmitterService.subsVarContent==undefined) {    
       this.eventEmitterService.subsVarContent = this.eventEmitterService.    
       invokeSelectContentFunction.subscribe((value:string) => {    
         this.getContent(value); 
       });    
     } 
+  }
+  getFirstContent(){
+    this.data.getFirstContent().subscribe(data => {
+      this.content = data[0];  
+      console.log(this.content)
+      }
+    );
   }
 
   getContent(value){
