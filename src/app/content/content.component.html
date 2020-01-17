@@ -1,9 +1,16 @@
-<div id="" class="content tags"  *ngIf="content">
-<section id="myPortfolio">
-        <span  >
-          
-                    
-                    {{ content.title.rendered}}
-        </span>
-    </section>
+<div  class="content tags"  *ngIf="content">
+  <article class="details" data-index="" >
+        <div class="col-md-6 float-left image-content">
+            <img class="portfolioImg" src="{{ content.acf.image}}">
+        </div>
+        <div class="col-md-6 float-left text-content">
+            <h2>{{ content.title.rendered}}</h2>
+            <ul>
+                <li class=""><label>Opdracht:</label>{{ content.acf.opdracht }}</li>
+                <li class=""><label>Ontwerp:</label>{{ content.acf.ontwerp }}</li>
+                <li class=""><label>Jaar:</label>{{ content.acf.release }}</li>
+
+            </ul>
+        </div>
+    </article>
 </div>

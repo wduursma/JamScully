@@ -1,0 +1,33 @@
+.details {
+    margin-bottom: 20px; 
+    .image-content {
+        padding-left: 0;
+        overflow: hidden;
+        height: 460px;
+        max-width: 600px;
+        margin-right: 20px;
+    }
+    .portfolioImg {
+        height: 100%;
+        position: relative;
+    }
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+    }
+    .text-content {
+        ul {
+            padding-left: 0;
+            li {
+            padding-left: 0px !Important;
+            font-size: 16px;
+            line-height: 18px !Important;
+            list-style: none;
+                label {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
