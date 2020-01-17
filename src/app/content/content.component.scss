@@ -1,3 +1,4 @@
+@import '../../colors.scss';
 .details {
     margin-bottom: 20px; 
     .image-content {
@@ -17,6 +18,13 @@
         border-style: none;
     }
     .text-content {
+        padding-left: 40px;
+        .skillList {
+            width: 100%;
+            float:left;
+            margin-bottom: 30px;
+        }
+    
         ul {
             padding-left: 0;
             li {
@@ -29,5 +37,12 @@
                 }
             }
         }
+        
+    }
+    .badge-secondary {
+        margin-right: 10px;
+        float: left;
+        color: $white;
+        background-color: $editicons;
     }
 }
