@@ -1,1 +1,1 @@
-[{"route":"/"},{"route":"/who"}]
+[{"route":"/"},{"route":"/who"},{"route":"/portfolio"},{"route":"/blog/1-18-2020-blog","title":"This is the blog","description":"blog description","publish":false},{"route":"/blog/this-is-my-postabout","title":"This is my postabout","description":"blog description","publish":false}]

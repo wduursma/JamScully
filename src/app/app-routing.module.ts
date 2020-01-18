@@ -8,7 +8,8 @@ import { PortfolioComponent } from  './portfolio/portfolio.component';
 const routes: Routes = [
   { path: '', component: PortfolioComponent  },
   { path: 'who', component: WhoComponent },
-  { path: 'portfolio', component: PortfolioComponent }  
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) }  
 ];
 
 @NgModule({
