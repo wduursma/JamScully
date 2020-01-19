@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {IdleMonitorService, ScullyRoutesService} from '@scullyio/ng-lib'; 
 import { DataService } from '../data.service';
 
 @Component({
@@ -16,7 +17,9 @@ export class WhoComponent implements OnInit {
  
 
   constructor(
-    private data: DataService
+    private data: DataService,
+    private idle: IdleMonitorService,
+    public scully: ScullyRoutesService
   ) { }
 
   ngOnInit() {
