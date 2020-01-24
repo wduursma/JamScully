@@ -14,6 +14,9 @@ declare var ng: any;
 export class BlogComponent implements OnInit {
   ngOnInit() {}
 
-  constructor(private router: Router, private route: ActivatedRoute) {
+  constructor(
+    private router: Router, 
+    private route: ActivatedRoute
+    ) {
   }
 }

@@ -1,13 +1,10 @@
-<div id="b_one" class="content home-info first b_one"  *ngIf="message">
-    <h1>{{ message.title.rendered }}</h1>
-    <p>
-       {{ message.content.rendered }}
-    </p>
-    <ul>
-        <li *ngFor="let route of scully.available$ | async">
-          <a [routerLink]="route.route">{{ route.title || route.route }}</a>
-        </li>
-      </ul>
+<div id="b_one" class="content home-info first b_one" >
+  <div *ngIf="message">
+      <h1>{{ message.title.rendered }}</h1>
+      <p>
+        {{ message.content.rendered }}
+      </p>
+  </div>
 </div>
 
 
