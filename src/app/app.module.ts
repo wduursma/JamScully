@@ -9,7 +9,6 @@ import { WhoComponent } from './who/who.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { NavComponent } from './nav/nav.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { NawComponent } from './naw/naw.component';
 import { PostlistComponent } from './postlist/postlist.component';
@@ -21,7 +20,6 @@ import { ContentComponent } from './content/content.component';
     WhoComponent,
     HomeComponent,
     PortfolioComponent,
-    NavComponent,
     CategoriesComponent,
     NawComponent,
     PostlistComponent,

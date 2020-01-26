@@ -23,9 +23,7 @@ export class DataService {
  
   }
   
-  getUsers() {
-    return this.http.get('https://reqres.in/api/users')
-  }
+ 
   getFirstPosts() {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts');
   }
@@ -33,13 +31,12 @@ export class DataService {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts?categories='+value);
   }
   getFirstContent() {
-    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts');
+    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts/');
   }
   getContent(value) {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts/'+value);
   }
   getPortUser() {
-
      return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/pages/44');
   }
   firstClick() {
