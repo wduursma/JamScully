@@ -13,6 +13,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { NawComponent } from './naw/naw.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { ContentComponent } from './content/content.component';
+import { SliderOverMyComponent } from './slider-over-my/slider-over-my.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContentComponent } from './content/content.component';
     CategoriesComponent,
     NawComponent,
     PostlistComponent,
-    ContentComponent
+    ContentComponent,
+    SliderOverMyComponent
   ],
   imports: [
     BrowserModule,
