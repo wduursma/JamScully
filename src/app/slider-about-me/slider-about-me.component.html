@@ -1,0 +1,16 @@
+<div id="b_one" class="content" >
+    <div >
+      <ngb-carousel *ngIf="resensie" [interval]="10000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
+        <ng-template ngbSlide *ngFor="let res of resensie">
+          <div class="picsum-img-wrapper">
+            <img [src]="res.acf.image" alt="Random slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{ res.acf.opdracht }}</h3>
+            <p>{{ res.content.rendered}}</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+       
+    </div>
+</div>

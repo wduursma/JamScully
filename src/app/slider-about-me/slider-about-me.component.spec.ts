@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SliderOverMyComponent } from './slider-over-my.component';
+import { SliderOverMyComponent } from './slider-about-me.component';
 
 describe('SliderOverMyComponent', () => {
   let component: SliderOverMyComponent;

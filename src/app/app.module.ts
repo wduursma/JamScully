@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { EventEmitterService } from './event-emitte.service';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +14,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { NawComponent } from './naw/naw.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { ContentComponent } from './content/content.component';
-import { SliderOverMyComponent } from './slider-over-my/slider-over-my.component';
+import { SliderAboutMeComponent } from './slider-about-me/slider-about-me.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SliderOverMyComponent } from './slider-over-my/slider-over-my.component
     NawComponent,
     PostlistComponent,
     ContentComponent,
-    SliderOverMyComponent
+    SliderAboutMeComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -39,6 +39,9 @@ export class DataService {
   getPortUser() {
      return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/pages/44');
   }
+  getResensie(){
+    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts?categories=1');
+  }
   firstClick() {
     return console.log('clicked');
   }
