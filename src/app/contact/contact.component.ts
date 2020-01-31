@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +9,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class ContactComponent implements OnInit {
 
-  faCoffee  = faCoffee;
+  faLinkedinIn  = faLinkedinIn;
   constructor() { }
 
   ngOnInit() {
