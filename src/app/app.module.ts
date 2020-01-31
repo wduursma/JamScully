@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { EventEmitterService } from './event-emitte.service';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +14,8 @@ import { NawComponent } from './naw/naw.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { ContentComponent } from './content/content.component';
 import { SliderAboutMeComponent } from './slider-about-me/slider-about-me.component';
+import { ContactComponent } from './contact/contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -27,14 +28,15 @@ import { SliderAboutMeComponent } from './slider-about-me/slider-about-me.compon
     PostlistComponent,
     ContentComponent,
     SliderAboutMeComponent,
-    
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule,
   ],
   providers: [EventEmitterService],
   bootstrap: [AppComponent]

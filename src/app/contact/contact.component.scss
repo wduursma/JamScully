@@ -1,0 +1,37 @@
+@import '../../colors.scss';
+.half {
+    height: 242px;
+    min-height: 242px;
+    padding: 30px 40px;
+    
+}
+.color-half {
+    background-color: $aubergine;
+    a:link, a:visited {
+        color: $white;
+    }
+}
+.box-left {
+    width: 30%;
+    float: left;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.box-right {
+    width: 65%;
+    float: left;
+    font-size: 16px;
+    border-left: 1px solid $aubergine;
+    .box-right-row {
+        width: 100%;
+        float: left;
+        padding-left: 20px;
+        a:link {
+            color: $black;
+        }
+    }
+}
+.footer_icon span {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
