@@ -5,7 +5,7 @@
                                 <span (click)="selectCategories(cat.value)" class="itemTag"> {{ cat.label }} </span>
                         </span>
                         <span *ngIf="cat.value === '0'" >
-                                        <span> *{{ cat.label }}* </span>
+                                        <span>{{ cat.label }}</span>
                         </span>
                 </span>
         </div>

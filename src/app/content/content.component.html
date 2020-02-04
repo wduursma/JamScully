@@ -1,5 +1,5 @@
-<div  class="content tags"  *ngIf="myContent">
-  <article class="details" data-index="" >
+<div  class="content tags"  >
+  <article class="details" *ngIf="myContent" >
         <div class="col-md-6 float-left image-content">
             <img class="portfolioImg" src="{{ myContent.acf.image}}" (click)="open(content)">
             <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>

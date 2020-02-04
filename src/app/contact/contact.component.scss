@@ -7,7 +7,15 @@
 }
 .color-half {
     background-color: $aubergine;
-    a:link, a:visited {
+    padding-top: 50px;
+    padding-left: 70px;
+    a {
+        padding-left: 20px;
+        position: relative; 
+        bottom: 10px;       
+
+    }
+    a:link, a:visited, p {
         color: $white;
     }
 }
@@ -34,4 +42,7 @@
 .footer_icon span {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
+}
+.svg-inline--fa {
+    font-size: 2em;
 }
