@@ -1,5 +1,9 @@
 @import '../../colors.scss';
 
+.carousel {
+    overflow: hidden;
+    max-height: 500px;
+}
 .carousel-caption {
     position: inherit;
     color: $black;
@@ -8,4 +12,8 @@
 }
 img {
             width: 100%;
+ }
+ .signature {
+     text-align: right;
+     font-style: italic;
  }
