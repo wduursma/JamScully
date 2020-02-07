@@ -10,6 +10,7 @@ import { EventEmitterService } from '../event-emitte.service';
 export class CategoriesComponent implements OnInit {
 
   messagex: string;
+  categoriesList: any;
  
   @Input() categories: any; 
 
@@ -20,7 +21,7 @@ export class CategoriesComponent implements OnInit {
 
   ngOnInit() {
     this.data.currentMessage.subscribe(messagex => this.messagex = messagex);
-    
+    this.getCategoriesList()  
   }
   newMessagex(value) {
     this.data.changeMessage(value);
@@ -29,6 +30,12 @@ export class CategoriesComponent implements OnInit {
   selectCategories(value){    
     this.eventEmitterService.onFirstComponentButtonClick(value);   
   } 
+  getCategoriesList() {
+    this.data.getCategories().subscribe(data => {
+      this.categoriesList = data;  
+      }
+    );
+  }
 
 
 }

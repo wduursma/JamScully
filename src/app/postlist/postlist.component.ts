@@ -24,6 +24,7 @@ export class PostlistComponent implements OnInit {
       this.eventEmitterService.subsVar = this.eventEmitterService.    
       invokeFirstComponentFunction.subscribe((value:string) => {    
         this.getPosts(value); 
+        //console.log('>>'+value);
       });    
     }  
   }

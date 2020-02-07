@@ -1,13 +1,14 @@
 <div id="b_two" class="content tags">
         <div *ngIf="categories">
-                <span *ngFor="let cat of categories" >
-                        <span *ngIf="cat.value !== '0'" >
-                                <span (click)="selectCategories(cat.value)" class="itemTag"> {{ cat.label }} </span>
+                <span *ngFor="let cat of categoriesList" >
+                        <span *ngIf="cat.count > 0" >
+                                <span (click)="selectCategories(cat.id)" class="itemTag"> {{ cat.name }} </span>
                         </span>
-                        <span *ngIf="cat.value === '0'" >
-                                        <span>{{ cat.label }}</span>
+                        <span *ngIf="cat.count == '0'" >
+                                        <span> {{ cat.name }} </span>
                         </span>
                 </span>
         </div>
+        
 </div>
    
