@@ -7,7 +7,10 @@
     color: $darkgray;
     cursor: default;
     line-height: 40px;
-
+    .itemTagNoLink {
+        padding-left: 0px;
+        margin-right: -10px;
+    }
     .itemTag {
             text-decoration: none;
             border-bottom: 1px solid $darkgray;
@@ -15,16 +18,14 @@
             margin: 0 10px;
             font-weight: 600;
             line-height: 40px;
-        
+            border-bottom: 0px solid $black;
+            .rotate {
+                transform: rotate(5deg);
+            }
     }
     .itemTag:hover{
         color: $black;
         border-bottom: 2px solid $black;
     }
-    .rotate{
-        -ms-transform: rotate(3deg); 
-        transform: rotate(3deg); 
-        position: absolute;
-        width: 85%; 
-    }
+
 }

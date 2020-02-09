@@ -3,10 +3,14 @@
                 <div *ngIf="categories">
                         <span *ngFor="let cat of categoriesList" >
                                 <span *ngIf="cat.count > 0 && cat.id !=1" >
-                                        <span (click)="selectCategories(cat.id)" class="itemTag">{{ cat.name }}</span>
+                                        <span (click)="selectCategories(cat.id)" class="itemTag">
+                                                        {{ cat.name }}
+                                        </span>
                                 </span>
                                 <span *ngIf="cat.count == '0'" >
-                                                <span class="itemTagNoLink">{{ cat.name }}</span>
+                                        <span class="itemTagNoLink">
+                                                {{ cat.name }}
+                                        </span>
                                 </span>
                                 &nbsp;
                         </span>

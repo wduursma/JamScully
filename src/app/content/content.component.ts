@@ -32,8 +32,12 @@ export class ContentComponent implements OnInit {
     } 
   }
   getFirstContent(){
+    this.mySkills = [];
     this.data.getFirstContent().subscribe(data => {
       this.myContent = data[0];  
+        for (let i = 0; i < this.myContent.categories.length; i++) {
+          this.getCategorieName(this.myContent.categories[i]);
+        }
       }
     );
   }
