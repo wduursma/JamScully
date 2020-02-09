@@ -4,7 +4,7 @@
                         <span *ngFor="let cat of categoriesList" >
                                 <span *ngIf="cat.count > 0 && cat.id !=1" >
                                         <span (click)="selectCategories(cat.id)" class="itemTag">
-                                                        {{ cat.name }}
+                                                {{ cat.name }}
                                         </span>
                                 </span>
                                 <span *ngIf="cat.count == '0'" >
