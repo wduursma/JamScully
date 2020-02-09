@@ -1,4 +1,8 @@
 @import '../../colors.scss';
+
+h1 {
+    text-transform: uppercase;
+}
 .details {
     margin-bottom: 20px; 
     .image-content {
@@ -38,6 +42,9 @@
             }
         }
         
+    }
+    .badge {
+        font-size: 100%;
     }
     .badge-secondary {
         margin-right: 10px;

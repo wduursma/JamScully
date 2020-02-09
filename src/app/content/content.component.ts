@@ -3,6 +3,7 @@ import { DataService } from '../data.service';
 import { EventEmitterService } from '../event-emitte.service';
 import { NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
+
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
@@ -12,6 +13,8 @@ export class ContentComponent implements OnInit {
 
   myContent: any;
   closeResult: string;
+  categorieName: any;
+  mySkills: any;
 
   constructor(
     private data: DataService,
@@ -31,17 +34,30 @@ export class ContentComponent implements OnInit {
   getFirstContent(){
     this.data.getFirstContent().subscribe(data => {
       this.myContent = data[0];  
-      console.log(this.myContent)
       }
     );
   }
 
   getContent(value){
+    this.mySkills = [];
     this.data.getContent(value).subscribe(data => {
       this.myContent = data;  
+        for (let i = 0; i < this.myContent.categories.length; i++) {
+          this.getCategorieName(this.myContent.categories[i]);
+        }
       }
     );
   }
+
+  getCategorieName(catName) {
+    this.data.getCategorieName(catName).subscribe(data => {
+      this.categorieName = data; 
+      const totalCat = this.mySkills.push(this.categorieName.name);
+      console.log(this.mySkills);
+      }
+    );
+  }
+
   open(modalContent) {
     this.modalService.open(modalContent, {ariaLabelledBy: 'modal-basic-title', size: 'xl'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;

@@ -26,6 +26,9 @@ export class DataService {
   getCategories() {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/categories?per_page=100');
   }
+  getCategorieName(catNumber) {
+    return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/categories/'+catNumber);
+  }
   getFirstPosts() {
     return this.http.get('https://i-nix.nl/jamstack/wp-json/wp/v2/posts');
   }

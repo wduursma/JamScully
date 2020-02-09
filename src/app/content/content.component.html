@@ -2,29 +2,29 @@
   <article class="details" *ngIf="myContent" >
         <div class="col-md-6 float-left image-content">
             <img class="portfolioImg" src="{{ myContent.acf.image}}" (click)="open(content)">
-            <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
         </div>
         <div class="col-md-6 float-left text-content">
-            <h1>{{ myContent.title.rendered}}</h1>
-            <ul>
+            <h1 *ngIf="myContent">{{ myContent.title.rendered}}</h1>
+            <ul *ngIf="myContent">
                 <li class=""><label>Opdracht:</label>{{ myContent.acf.opdracht }}</li>
                 <li class=""><label>Ontwerp:</label>{{ myContent.acf.ontwerp }}</li>
                 <li class=""><label>Jaar:</label>{{ myContent.acf.release }}</li>
 
             </ul>
-            <div class="skillList">
+            <div class="skillList" *ngIf="categorieName">
                 <ul>
-                    <li *ngFor="let skill of myContent.acf.usedSkill">
+                    <li *ngFor="let skill of mySkills">
                         <h5><span class="badge badge-secondary">{{ skill }}</span></h5>
                     </li>
                 </ul>
             </div>
-            <p>
+            <p *ngIf="myContent" >
                 {{ myContent.content.rendered }}
             </p>
 
         </div>
     </article>
+    
 </div>
 
 <ng-template #content let-modal>
