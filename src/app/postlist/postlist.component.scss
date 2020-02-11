@@ -14,3 +14,17 @@
         text-transform: uppercase;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    #myPortfolio {
+        li {
+            padding-left: 0px;
+            width: 100%;
+        }
+    } 
+    .content { 
+        min-height: inherit;
+    }
+
+}

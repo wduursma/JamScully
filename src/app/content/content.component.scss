@@ -61,3 +61,30 @@ h1 {
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .details {
+        .portfolioImg {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .details {
+        .image-content {
+
+            height: inherit;
+            max-width: 600px;
+            margin-right: 20px;
+        }
+        .text-content {
+            padding-left: 0px; 
+            margin-top: 20px;
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+        .badge {
+            font-size: 70%;
+        }
+    }
+}
