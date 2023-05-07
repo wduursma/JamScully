@@ -31,7 +31,7 @@
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "linearicons": "^1.0.2",
     "popper": "^1.0.1",
     "rxjs": "~6.5.3",
